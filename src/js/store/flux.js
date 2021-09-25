@@ -3,12 +3,12 @@ const getState = ({ getStore, getActions, setStore }) => {
 		store: {
 			demo: [
 				{
-					title: "FIRST",
+					title: "PRIMERO",
 					background: "white",
 					initial: "white"
 				},
 				{
-					title: "SECOND",
+					title: "SEGUNDO",
 					background: "white",
 					initial: "white"
 				}
@@ -16,8 +16,12 @@ const getState = ({ getStore, getActions, setStore }) => {
 		},
 		actions: {
 			// Use getActions to call a function within a fuction
-			exampleFunction: () => {
-				getActions().changeColor(0, "green");
+			// las acciones son funciones recuerden esto
+			// esto es flux una forma de organizar el codigo
+			colorFunction: index => {
+				let color = Math.floor(Math.random() * 4);
+				let arrayColor = ["yellow", "white", "green", "cyan"];
+				getActions().changeColor(index, arrayColor[color]);
 			},
 			loadSomeData: () => {
 				/**
