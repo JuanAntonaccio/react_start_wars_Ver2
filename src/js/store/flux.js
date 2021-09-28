@@ -19,8 +19,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 			// las acciones son funciones recuerden esto
 			// esto es flux una forma de organizar el codigo
 			colorFunction: index => {
-				let color = Math.floor(Math.random() * 4);
-				let arrayColor = ["yellow", "white", "green", "cyan"];
+				let color = Math.floor(Math.random() * 6);
+				let arrayColor = ["yellow", "white", "green", "cyan", "pink", "orange"];
 				getActions().changeColor(index, arrayColor[color]);
 			},
 			loadSomeData: () => {
