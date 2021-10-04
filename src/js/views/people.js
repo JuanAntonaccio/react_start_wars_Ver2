@@ -9,6 +9,9 @@ export const People = props => {
 	return (
 		<div className="jumbotron">
 			<h3 className="">The name is {store.people[params.theid].name}</h3>
+			<p className="ms-5"> The height is :{store.people[params.theid].height}</p>
+			<p className="ms-5"> The mass is :{store.people[params.theid].mass}</p>
+			<p className="ms-5"> The hair_color is :{store.people[params.theid].hair_color}</p>
 
 			<hr className="my-4" />
 
