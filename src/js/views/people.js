@@ -12,6 +12,10 @@ export const People = props => {
 			<p className="ms-5"> The height is :{store.people[params.theid].height}</p>
 			<p className="ms-5"> The mass is :{store.people[params.theid].mass}</p>
 			<p className="ms-5"> The hair_color is :{store.people[params.theid].hair_color}</p>
+			<p className="ms-5"> The skin color is :{store.people[params.theid].skin_color}</p>
+			<p className="ms-5"> The eye color is :{store.people[params.theid].eye_color}</p>
+			<p className="ms-5"> The birth year is :{store.people[params.theid].birth_year}</p>
+			<p className="ms-5"> The gender is :{store.people[params.theid].gender}</p>
 
 			<hr className="my-4" />
 

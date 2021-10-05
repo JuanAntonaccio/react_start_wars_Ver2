@@ -39,7 +39,7 @@ export const Home = () => {
 							<div className="card-body">
 								<h5 className="card-title">Planets</h5>
 								<p className="card-text">{item.name}</p>
-								<Link to="/planets" className="btn btn-primary">
+								<Link to={"/planets/" + index} className="btn btn-primary">
 									Go to....
 								</Link>
 							</div>
