@@ -21,6 +21,7 @@ export const Home = () => {
 								<Link to={"/people/" + index} className="btn btn-primary">
 									Learn More....
 								</Link>
+								<i className="far fa-heart" />
 							</div>
 						</div>
 					);
@@ -42,6 +43,7 @@ export const Home = () => {
 								<Link to={"/planets/" + index} className="btn btn-primary">
 									Learn More....
 								</Link>
+								<i className="far fa-heart" />
 							</div>
 						</div>
 					);
