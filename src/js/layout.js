@@ -5,7 +5,7 @@ import ScrollToTop from "./component/scrollToTop";
 import { Home } from "./views/home";
 
 import { People } from "./views/people";
-import { Planets } from "./views/people";
+import { Planets } from "./views/planets";
 
 import injectContext from "./store/appContext";
 

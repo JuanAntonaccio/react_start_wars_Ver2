@@ -12,12 +12,11 @@ export const Planets = props => {
 			<p className="ms-5"> The rotation period is :{store.planets[params.theid].rotation_period}</p>
 			<p className="ms-5"> The orbital period is :{store.planets[params.theid].orbital_period}</p>
 			<p className="ms-5"> The diameter is :{store.planets[params.theid].diameter}</p>
-            <p className="ms-5"> The climate is :{store.planets[params.theid].climate}</p>
+			<p className="ms-5"> The climate is :{store.planets[params.theid].climate}</p>
 			<p className="ms-5"> The gravity is :{store.planets[params.theid].gravity}</p>
 			<p className="ms-5"> The terrain is :{store.planets[params.theid].terrain}</p>
 			<p className="ms-5"> The surface water is :{store.planets[params.theid].surface_water}</p>
 			<p className="ms-5"> The population is :{store.planets[params.theid].population}</p>
-
 
 			<hr className="my-4" />
 

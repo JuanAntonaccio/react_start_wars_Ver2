@@ -18,8 +18,8 @@ export const Home = () => {
 							<div className="card-body">
 								<h5 className="card-title">Datos</h5>
 								<p className="card-text">{item.name}</p>
-								<Link to={"/people/" + index} gclassName="btn btn-primary">
-									Go to....
+								<Link to={"/people/" + index} className="btn btn-primary">
+									Learn More....
 								</Link>
 							</div>
 						</div>
@@ -40,7 +40,7 @@ export const Home = () => {
 								<h5 className="card-title">Planets</h5>
 								<p className="card-text">{item.name}</p>
 								<Link to={"/planets/" + index} className="btn btn-primary">
-									Go to....
+									Learn More....
 								</Link>
 							</div>
 						</div>
