@@ -2,7 +2,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
 			people: [],
-			planets: []
+			planets: [],
+			favoritos: []
 		},
 		actions: {
 			// Use getActions to call a function within a fuction
@@ -36,6 +37,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 
 				//reset the global store
 				setStore({ demo: demo });
+			},
+			agregarFavoritos: favorito => {
+				console.log("Agregando favoritos  " + favorito);
+				setStore({ favoritos: favorito });
 			}
 		}
 	};

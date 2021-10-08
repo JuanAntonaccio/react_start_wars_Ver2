@@ -21,7 +21,12 @@ export const Home = () => {
 								<Link to={"/people/" + index} className="btn btn-primary">
 									Learn More....
 								</Link>
-								<i className="far fa-heart" />
+								<button
+									type="button"
+									className="btn btn-warning ms-1"
+									onClick={() => actions.agregarFavoritos(item.name)}>
+									<i className="far fa-heart" />
+								</button>
 							</div>
 						</div>
 					);
@@ -43,7 +48,12 @@ export const Home = () => {
 								<Link to={"/planets/" + index} className="btn btn-primary">
 									Learn More....
 								</Link>
-								<i className="far fa-heart" />
+								<button
+									type="button"
+									className="btn btn-warning ms-1"
+									onClick={() => actions.agregarFavoritos(item.name)}>
+									<i className="far fa-heart" />
+								</button>
 							</div>
 						</div>
 					);
