@@ -40,7 +40,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 			},
 			agregarFavoritos: favorito => {
 				console.log("Agregando favoritos  " + favorito);
-				setStore({ favoritos: favorito });
+				const store = getStore();
+				const copiaFavoritos = [...store.favoritos,favorito]
+				setStore({ favoritos: copiaFavoritos });
 			}
 		}
 	};
