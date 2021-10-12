@@ -7,7 +7,7 @@ export const Navbar = () => {
 	return (
 		<nav className="navbar navbar-light bg-light mb-3">
 			<Link to="/">
-				<span className="navbar-brand mb-0 h1">
+				<span className="mb-0 h1">
 					<i className="fab fa-jedi-order" />
 				</span>
 			</Link>
@@ -23,19 +23,25 @@ export const Navbar = () => {
 						<span className="badge bg-secondary ms-1">{store.favoritos.length}</span>
 					</button>
 					<ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-						{store.favoritos.map((item, index) => {
-							return (
-								<li key={index}>
-									<a className="dropdown-item">
-										{item}
-										<i
-											className="far fa-trash-alt"
-											onClick={() => actions.eliminarFavorito(item)}
-										/>
-									</a>
-								</li>
-							);
-						})}
+						{store.favoritos.length > 0 ? (
+							store.favoritos.map((item, index) => {
+								return (
+									<li key={index}>
+										<a className="dropdown-item">
+											{item}
+											<i
+												className="far fa-trash-alt"
+												onClick={() => actions.eliminarFavorito(item)}
+											/>
+										</a>
+									</li>
+								);
+							})
+						) : (
+							<li>
+								<a className="dropdown-item">Vacio</a>
+							</li>
+						)}
 					</ul>
 				</div>
 			</div>

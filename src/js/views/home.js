@@ -10,6 +10,7 @@ export const Home = () => {
 
 	return (
 		<div className="container-fluid">
+			<h3 className="text-danger">Personajes</h3>
 			<div className="carrousel row">
 				{store.people.map((item, index) => {
 					return (
@@ -37,6 +38,7 @@ export const Home = () => {
 					<button className="btn btn-primary">Back home</button>
 				</Link>
 			</div>
+			<h3 className="text-danger">Planetas</h3>
 			<div className="carrousel row">
 				{store.planets.map((item, index) => {
 					return (
