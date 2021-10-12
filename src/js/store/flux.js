@@ -41,7 +41,19 @@ const getState = ({ getStore, getActions, setStore }) => {
 			agregarFavoritos: favorito => {
 				console.log("Agregando favoritos  " + favorito);
 				const store = getStore();
-				const copiaFavoritos = [...store.favoritos,favorito]
+				if (store.favoritos.includes(favorito)) {
+					getActions().eliminarFavorito(favorito);
+				} else {
+					const copiaFavoritos = [...store.favoritos, favorito];
+					setStore({ favoritos: copiaFavoritos });
+				}
+			},
+			eliminarFavorito: favorito => {
+				console.log("Eliminado Favorito " + favorito);
+				const store = getStore();
+				const copiaFavoritos = store.favoritos.filter((elem, index) => {
+					return elem != favorito;
+				});
 				setStore({ favoritos: copiaFavoritos });
 			}
 		}
